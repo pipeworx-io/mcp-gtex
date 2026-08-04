@@ -1,18 +1,20 @@
-# mcp-gtex
+# @pipeworx/gtex
 
-GTEx MCP.
+[GTEx Portal](https://gtexportal.org) MCP — Genotype-Tissue Expression: human gene expression across ~54 tissues. Keyless.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `gene` | Gene metadata by Gencode id or symbol. |
-| `median_expression` | Median expression across tissues for a gene (TPM). |
-| `top_expressed_genes` | Top expressed genes for a tissue. |
-| `single_tissue_eqtls` | Significant single-tissue eQTLs for a gene. |
-| `tissues` | List of tissues. |
+- `gene(gencode_id_or_symbol)` — gene metadata
+- `median_expression(gene)` — median expression across tissues
+- `top_expressed_genes(tissue, filter_mt_gene?, num?, datasetId?)` — top-expressed genes per tissue
+- `single_tissue_eqtls(gencode_id, tissue?)` — significant single-tissue eQTLs
+- `tissues()` — list of tissues
+
+## Data source
+
+`https://gtexportal.org/api/v2/`
 
 ## Quick Start
 
@@ -28,7 +30,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -52,7 +54,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
