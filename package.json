@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-gtex",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "GTEx MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "gtex",
     "gatewaySlug": "gtex",
-    "sourceHash": "v1-dbb13ed51aa95bc24a334aaf507935f7ffc2e29b0b855c375c622f392489b27b",
-    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
+    "sourceHash": "v1-96dd592ee11bb4c723b1a4c56215407d9ffc5d7104d1aa13c76afb0b54bb5839",
+    "sourceCommit": "0ca9712c0ac03bb0121cc7e81b202d0c45ac02ca"
   }
 }
